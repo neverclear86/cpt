@@ -1,0 +1,10 @@
+{
+  author = "neverclear",
+  programs = {
+    {
+      name = "cpt",
+      url = "",
+      version = "1.0.0",
+    }
+  }
+}

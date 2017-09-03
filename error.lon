@@ -1,0 +1,11 @@
+{
+  [1001] = "No Internet connection.",
+  [1002] = "Faild to get response.",
+
+  [2001] = "Bad package format.",
+  [2002] = "The package is already exist.",
+
+  [3001] = "The program you enterd is not found.",
+
+  [9999] = "Unexpected error.",
+}
