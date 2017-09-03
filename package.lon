@@ -3,7 +3,7 @@
   programs = {
     {
       name = "cpt",
-      url = "",
+      url = "https://raw.githubusercontent.com/neverclear86/cpt/master/cpt.lua",
       version = "1.0.0",
     }
   }

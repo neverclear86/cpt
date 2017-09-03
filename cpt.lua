@@ -389,7 +389,7 @@ local function showError(err)
   if errtbl ~= nil and errtbl.code == 1001 then
     print("No Internet connection.")
   elseif errtbl ~= nil then
-    local message = textutils.unserialise(getResponse(makeURL("zRzyJxdA")))
+    local message = textutils.unserialise(getResponse("https://raw.githubusercontent.com/neverclear86/cpt/master/error.lon"))
     print(message[errtbl.code])
   else
     print(err)

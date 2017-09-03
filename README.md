@@ -8,7 +8,7 @@ Minecraftの *ComputerCraft* 用のプログラムパッケージ管理
 - パッケージファイルを用意することでプログラムをcpt-getで管理できる
 
 ## Install
-`pastebin run `
+`pastebin run 06KWKAyr`
 
 ## Use
 
