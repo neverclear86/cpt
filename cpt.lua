@@ -286,9 +286,11 @@ local function install(programname)
   end
 
   -- 依存しているプログラムをインストール
-  for i, v in ipairs(target.programs[1].require) do
-    if not installed:findProgram(v) then
-      shell.run("cpt", "install", v)
+  if target.programs[1].require then
+    for i, v in ipairs(target.programs[1].require) do
+      if not installed:findProgram(v) then
+        shell.run("cpt", "install", v)
+      end
     end
   end
 
