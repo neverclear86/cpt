@@ -285,6 +285,13 @@ local function install(programname)
     _error({code = 3001})
   end
 
+  -- 依存しているプログラムをインストール
+  for i, v in ipairs(target.programs[1].require) do
+    if not installed:findProgram(v) then
+      shell.run("cpt", "install", v)
+    end
+  end
+
   -- プログラムをファイルに保存
   local run = function()
     local path = target.programs[1].path or "/"

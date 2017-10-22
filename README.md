@@ -52,6 +52,9 @@ cptで管理するためのパッケージファイル
       url = "programurl",
       version = "1.0.0",
       path = "/installpath/",
+      require = {
+        "programname2",
+      }
     },
     {
       name = "programname2",
@@ -67,5 +70,6 @@ cptで管理するためのパッケージファイル
   - url : プログラムファイルのURL(Pastebinのコード可)
   - version : プログラムのバージョン
   - path : プログラムのインストール先パス(省略時ルート直下)
+  - require: 依存しているプログラム名(省略可)
 
 ※jsonっぽいからlonファイルって呼んでる
